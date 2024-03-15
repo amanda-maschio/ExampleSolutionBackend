@@ -1,0 +1,28 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Commands\Guest\**" />
+    <Compile Remove="Commands\RoomType\**" />
+    <Compile Remove="Commands\Room\**" />
+    <EmbeddedResource Remove="Commands\Guest\**" />
+    <EmbeddedResource Remove="Commands\RoomType\**" />
+    <EmbeddedResource Remove="Commands\Room\**" />
+    <None Remove="Commands\Guest\**" />
+    <None Remove="Commands\RoomType\**" />
+    <None Remove="Commands\Room\**" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="MediatR" Version="12.2.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HotelSolutionBackend.Command.Domain\HotelSolutionBackend.Command.Domain.csproj" />
+    <ProjectReference Include="..\HotelSolutionBackend.Query.Application\HotelSolutionBackend.Query.Application.csproj" />
+  </ItemGroup>
+
+</Project>

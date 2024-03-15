@@ -1,0 +1,30 @@
+﻿<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="13.0.1" />
+    <PackageReference Include="MediatR" Version="12.2.0" />
+    <PackageReference Include="Microsoft.AspNetCore.Mvc.NewtonsoftJson" Version="6.0.28" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="6.0.28" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Design" Version="6.0.28">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="6.0.28" />
+    <PackageReference Include="Npgsql.EntityFrameworkCore.PostgreSQL" Version="6.0.22" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\HotelSolutionBackend.Command.Application\HotelSolutionBackend.Command.Application.csproj" />
+    <ProjectReference Include="..\HotelSolutionBackend.Command.Data\HotelSolutionBackend.Command.Data.csproj" />
+    <ProjectReference Include="..\HotelSolutionBackend.Command.Domain\HotelSolutionBackend.Command.Domain.csproj" />
+    <ProjectReference Include="..\HotelSolutionBackend.Query.Application\HotelSolutionBackend.Query.Application.csproj" />
+    <ProjectReference Include="..\HotelSolutionBackend.Query.Data\HotelSolutionBackend.Query.Data.csproj" />
+    <ProjectReference Include="..\HotelSolutionBackend.Query.Model\HotelSolutionBackend.Query.Model.csproj" />
+  </ItemGroup>
+
+
+</Project>
