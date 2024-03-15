@@ -1,7 +1,7 @@
 ﻿
 Microsoft Visual Studio Solution File, Format Version 12.00
-# Visual Studio Version 16
-VisualStudioVersion = 16.0.31624.102
+# Visual Studio Version 17
+VisualStudioVersion = 17.8.34330.188
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Query Stack", "Query Stack", "{3E6560B7-AEFD-4050-84A8-97CD7C99CD10}"
 EndProject
@@ -18,11 +18,17 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelSolutionBackend.Query.
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Command Stack", "Command Stack", "{83A0D879-12C1-4F32-A2E3-95D91F1C1A17}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelSolutionBackend.Command.Application", "HotelSolutionBackend.Command.Application\HotelSolutionBackend.Command.Application.csproj", "{A51EB5E6-1B24-435B-8F9D-7D612B5669A9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelSolutionBackend.Command.Application", "HotelSolutionBackend.Command.Application\HotelSolutionBackend.Command.Application.csproj", "{A51EB5E6-1B24-435B-8F9D-7D612B5669A9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelSolutionBackend.Command.Data", "HotelSolutionBackend.Command.Data\HotelSolutionBackend.Command.Data.csproj", "{4532F8E2-B662-42A6-A409-D9E5A07D1208}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelSolutionBackend.Command.Data", "HotelSolutionBackend.Command.Data\HotelSolutionBackend.Command.Data.csproj", "{4532F8E2-B662-42A6-A409-D9E5A07D1208}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelSolutionBackend.Command.Domain", "HotelSolutionBackend.Command.Domain\HotelSolutionBackend.Command.Domain.csproj", "{5AF80705-18B4-4CCD-A254-D0E49B767B2D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "HotelSolutionBackend.Command.Domain", "HotelSolutionBackend.Command.Domain\HotelSolutionBackend.Command.Domain.csproj", "{5AF80705-18B4-4CCD-A254-D0E49B767B2D}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Security", "Security", "{F1CF35A8-A051-45CF-BA59-01969CBCBF12}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelSolutionBackend.Security", "HotelSolutionBackend.Security\HotelSolutionBackend.Security.csproj", "{DA70D888-1521-4734-BE43-559660017D35}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HotelSolutionBackend.Authentication", "HotelSolutionBackend.Authentication\HotelSolutionBackend.Authentication.csproj", "{6F5C518C-2146-4B77-935A-68F6EB7110C9}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -58,6 +64,14 @@ Global
 		{5AF80705-18B4-4CCD-A254-D0E49B767B2D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{5AF80705-18B4-4CCD-A254-D0E49B767B2D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{5AF80705-18B4-4CCD-A254-D0E49B767B2D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA70D888-1521-4734-BE43-559660017D35}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA70D888-1521-4734-BE43-559660017D35}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA70D888-1521-4734-BE43-559660017D35}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA70D888-1521-4734-BE43-559660017D35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6F5C518C-2146-4B77-935A-68F6EB7110C9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6F5C518C-2146-4B77-935A-68F6EB7110C9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6F5C518C-2146-4B77-935A-68F6EB7110C9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6F5C518C-2146-4B77-935A-68F6EB7110C9}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -69,6 +83,8 @@ Global
 		{A51EB5E6-1B24-435B-8F9D-7D612B5669A9} = {83A0D879-12C1-4F32-A2E3-95D91F1C1A17}
 		{4532F8E2-B662-42A6-A409-D9E5A07D1208} = {83A0D879-12C1-4F32-A2E3-95D91F1C1A17}
 		{5AF80705-18B4-4CCD-A254-D0E49B767B2D} = {83A0D879-12C1-4F32-A2E3-95D91F1C1A17}
+		{DA70D888-1521-4734-BE43-559660017D35} = {F1CF35A8-A051-45CF-BA59-01969CBCBF12}
+		{6F5C518C-2146-4B77-935A-68F6EB7110C9} = {F1CF35A8-A051-45CF-BA59-01969CBCBF12}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {CD4C3C36-1C00-4218-B892-6A574E2B41EB}
